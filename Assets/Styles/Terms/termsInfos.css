@@ -1,0 +1,138 @@
+.background__title{
+    background-color: var(--grey11);
+}
+
+.terms__title{
+
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px;
+
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    gap: var(--space);
+}
+
+.terms__title div h2{
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+
+    line-height: 36px;
+    color: var(--grey5);
+}
+
+.terms__title div h1{
+    font-family: var(--secundary-font);
+    font-size: 4rem;
+    font-weight: 600;
+
+    line-height: 72px;
+    color: var(--white);
+}
+
+.terms__infos{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 0 0 0;
+
+    background-color: var(--white);
+}
+
+.infos{
+    padding: 0 60px 60px;
+}
+
+.infos > div{
+    display: flex;
+    align-items: center;
+
+    margin: 0 0 10px 0;
+}
+
+.infos div h3{
+    font-family: var(--secundary-font);
+    font-weight: 500;
+    font-size: 1.5rem;
+
+    line-height: 36px;
+
+    color: var(--grey9);
+}
+
+#line{
+    display: block;
+    width: 24px;
+    height: 10px;
+    background-image: linear-gradient(180deg, var(--yellow-light), var(--yellow-dark));
+
+    margin: 0 12px 0 0;
+}
+
+.infos ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.infos ul li{
+    font-weight: 400;
+    font-size: 1rem;
+
+    line-height: 24px;
+
+    color: var(--grey10);
+    margin: 0 0 0 36px;
+}
+
+@media(max-width: 870px){
+
+    .terms__title{
+        padding: 60px 120px;
+    }
+}
+
+@media(max-width: 660px){
+
+    .terms__title{
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .terms__title div h2{
+        font-size: 1.3rem;
+        line-height: 26px;
+    }
+
+    .terms__title div h1{
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+
+    .terms__infos{
+        padding: 30px;
+    }
+}
+
+@media(max-width: 460px){
+
+    .infos{
+        padding: 0 20px 20px;
+    }
+
+    .infos div h3{
+        font-size: 1.3rem;
+    
+        line-height: 26px;
+    }
+
+    #line{
+        width: 20px;
+        height: 8px;
+    }
+
+    .terms__infos{
+        padding: 10px;
+    }
+}

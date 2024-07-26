@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <title>Seguros</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+
+            <!--Logo da BikCraft-->
+            <div class="header__image">
+                <a href="../../index.html"><img src="../Images/Components/bikcraft.svg" alt="Logo do Bikcraft"></a>
+            </div>
+
+            <!--Menu de seleção-->
+            <div class="header__list">
+                <ul>
+                    <li><a href="bicicletas.html">Bicicletas</a></li>
+                    <li><a href="seguro.html" id="underLine">Seguros</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="header__menu-mobile">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- código da home -->
+        <section class="main__safe">
+            <div>
+                <p>escolha o seguro</p>
+                <h1>seguros<span>.</span></h1>
+            </div>
+
+            <!-- decoration higher safe -->
+            <figure>
+                <img src="../Images/Components/decoration safe superior.svg" alt="detalhe em pontos">
+            </figure>    
+
+            <div class="safe__plan silver">  
+                <div>
+                    <h2>Prata</h2>
+                    <div class="plan__price">
+                        <h3>R$ 199</h3>
+                        <p>mensal</p>
+                    </div>
+                </div>
+                <ul>
+                    <li>Duas trocas por ano</li>
+                    <li>Assistencia técnica</li>
+                    <li>Suporte 08h às 18h</li>
+                    <li>Cobertura estadual</li>
+                </ul>
+                <a href="../Pages/orcamento.html" onclick = "pagePlan('Silver')">Inscreva-se</a>
+            </div>
+            <div class="safe__plan gold">
+                <div>
+                    <h2>Ouro</h2>
+                    <div class="plan__price">
+                        <h3>R$ 299</h3>
+                        <p>mensal</p>
+                    </div>
+                </div>
+                <ul>
+                    <li>Cinco trocas por ano</li>
+                    <li>Assistência especial</li>
+                    <li>Suporte 24h</li>
+                    <li>Cobertura nacional</li>
+                    <li>Desconto em parceiros</li>
+                    <li>Acesso ao Clube Bikecraft</li>
+                </ul>
+                <a href="../Pages/orcamento.html" onclick = "pagePlan('Gold')">Inscreva-se</a>
+            </div>
+
+            <!-- decoration bottom safe -->
+            <figure>
+                <img src="../Images/Components/decoration safe inferior.svg" alt="detalhe em pontos">
+            </figure>
+
+        </section>
+
+        <section class="safe__advantage">
+
+            <!-- decoration higher advantage -->
+            <figure>
+                <img src="../Images/Components/decoration advantage superior.svg" alt="detalhe em pontos">
+            </figure>
+
+            <div class="advantage__infos">
+                <h1>nossas vantagens<span>.</span></h1>
+                <div>
+                    <img src="../Images/Components/eletrica.svg" alt="Reparo Elétrico">
+                    <h2>Reparo Elétrico</h2>
+                    <p>Garantimos o reparo completo do seu motor em caso de falhas. Sabemos que falhas são raras, mas estamos aqui para caso ocorra.</p>
+                </div>
+                <div>
+                    <img src="../Images/Components/carbono.svg" alt="Reparo de Quadro">
+                    <h2>Reparo de Quadro</h2>
+                    <p>Nossos quadros são feitos para durar para sempre. Mas caso algo ocorra, ficamos felizes em reparar. </p>
+                </div>
+                <div>
+                    <img src="../Images/Components/Sustentável.svg" alt="Sustentável">
+                    <h2>Sustentável</h2>
+                    <p>Trabalhamos com a filosofia de desperdício zero. Qualquer parte defeituosa é reciclada e reutilizada em outro projeto.</p>
+                </div>
+                <div>
+                    <img src="../Images/Components/rastreador.svg" alt="Recuperação">
+                    <h2>Recuperação</h2>
+                    <p>Recuperamos Bikcrafts roubadas sem custo adicional para o dono. Se não conseguirmos recuperar, damos uma nova para você.</p>
+                </div>
+                <div>
+                    <img src="../Images/Components/Segurança.svg" alt="Segurança">
+                    <h2>Segurança</h2>
+                    <p>O nosso seguro garante que todo reparo seja feito com peças genuínas e de alta qualidade. Confie na Bikcraft.</p>
+                </div>
+                <div>
+                    <img src="../Images/Components/velocidade.svg" alt="Rapidez">
+                    <h2>Rapidez</h2>
+                    <p>A sua Bikcraft ficará pronta para uso no mesmo dia, caso você traga ela para ser reparada em uma das filiais.</p>
+                </div>
+            </div>
+
+            <!-- decoration bottom advantage -->
+            <figure>
+                <img src="../Images/Components/decoration advantage inferior.svg" alt="detalhe em pontos">
+            </figure>
+
+        </section>
+
+        <section class="safe__questions">
+
+            <div>
+                <h1>perguntas frequentes<span>.</span></h1>
+                <article class="questions">
+                    <div onclick="openMenu1()">
+                        <div>
+                            <h2>Qual forma de pagamentos vocês aceitam?</h2>
+                            <img src="../Images/Components/seta de abrir menu.svg" alt="Abrir menu">
+                        </div>
+                        <p>Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, Elo e American Express. Para pagamentos à vista também aceitamos PIX e boleto através do PagSeguro. </p>
+                    </div>
+                    <div onclick="openMenu2()">
+                        <div>
+                            <h2>Vocês possuem algum desconto?</h2>
+                            <img src="../Images/Components/seta de abrir menu.svg" alt="Abrir menu">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit blanditiis eveniet obcaecati temporibus dicta dolores porro hic eaque, at repellat nostrum fugit aperiam labore sed praesentium, esse nemo soluta laborum.</p>
+                    </div>
+                    <div onclick="openMenu3()">
+                        <div>
+                            <h2>Posso parcelar no boleto?</h2>
+                            <img src="../Images/Components/seta de abrir menu.svg" alt="Abrir menu">
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non beatae et ipsam earum laudantium voluptatum ex aut ut repudiandae laborum? Recusandae molestias aliquid minima sunt distinctio doloribus, ipsam minus culpa.</p>
+                    </div>
+                    <div onclick="openMenu4()">
+                        <div>
+                            <h2>Quantas trocas posso fazer por ano?</h2>
+                            <img src="../Images/Components/seta de abrir menu.svg" alt="Abrir menu">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatum labore dolores ex cumque ea quidem eum iste, nostrum perferendis placeat aliquam nam nobis repellat sint accusamus vitae, voluptas doloremque?</p>
+                    </div>
+                    <div onclick="openMenu5()">
+                        <div>
+                            <h2>Como posso entrar em contato?</h2>
+                            <img src="../Images/Components/seta de abrir menu.svg" alt="Abrir menu">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aperiam eveniet esse nulla? Quis fugit eveniet iste quam saepe aliquid, quae inventore fugiat repellendus magni nemo. Dolor, maiores. Iure, nulla!</p>
+                    </div>
+                    <div onclick="openMenu6()">
+                        <div>
+                            <h2>Qual a garantia que possuo?</h2>
+                            <img src="../Images/Components/seta de abrir menu.svg" alt="Abrir menu">
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, laborum vero sint, ratione adipisci culpa dolorum modi accusantium tenetur perspiciatis sed maiores voluptatem quod. Molestiae nesciunt maiores necessitatibus nisi dignissimos!</p>
+                    </div>
+                    <div onclick="openMenu7()">
+                        <div>
+                            <h2>Qual Bikcraft devo escolher para o meu tamanho?</h2>
+                            <img src="../Images/Components/seta de abrir menu.svg" alt="Abrir menu">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aperiam, cupiditate, ea ullam voluptate officiis nisi quam natus asperiores exercitationem impedit? Molestias laborum porro, consequuntur repellat at ullam eius odio?</p>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer__itens">
+                <figure>
+                    <img src="../Images/Components/decoration footer.svg">
+                </figure>
+                <div class="footer__container">
+                    <div class="footer__container-itens">
+                        <div class="footer__logo">
+                            <img src="../Images/Components/bikcraft.svg" alt="Logo da Bikcraft">
+                        </div>
+                        <div class="footer__contact">
+                            <h2>CONTATO</h2>
+                            <nav class="footer__contact-nav">
+                                <a href="tel:553399999999">+55 33 9999-9999</a>
+                                <a href="malito:contato@bikcraft.com">contato@bikcraft.com</a>
+                            </nav>
+                            <hr>
+                            <div class="footer__contact-text">
+                                <p>Rua Ali Perto, 55 - Ibituruna</p>
+                                <p>Governador Valadares - MG</p>
+                            </div>
+                            <hr>
+                            <nav class="footer__contact-socialmedia">
+                                <a href="#"><img src="../Images/Components/instagram.svg" alt="Logo do Instagram"></a>
+                                <a href="#"><img src="../Images/Components/youtube.svg" alt="Logo do Youtube"></a>
+                                <a href="#"><img src="../Images/Components/facebook.svg" alt="Logo do Facebook"></a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="footer__informations">
+                        <h2>INFORMAÇÕES</h2>
+                        <nav class="footer__informations-nav">
+                            <a href="bicicletas.html">Bicicletas</a>
+                            <a href="seguro.html">Seguros</a>
+                            <a href="contato.html">Contato</a>
+                            <a href="termosCondição.html">Termos e condições</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer__direitos">Bikcraft © Alguns Direitos Reservados.</p>
+    </footer>
+    
+    <script src="../Javascript/menu.js"></script>
+    <script src="../Javascript/questions.js"></script>
+    <script>
+        function pagePlan(plan){
+            sessionStorage.setItem('pagePlan', plan)
+        };
+    </script>
+</body>
+</html>

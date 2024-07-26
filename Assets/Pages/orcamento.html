@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <title>Seguros</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+
+            <!--Logo da BikCraft-->
+            <div class="header__image">
+                <a href="../../index.html"><img src="../Images/Components/bikcraft.svg" alt="Logo do Bikcraft"></a>
+            </div>
+
+            <!--Menu de seleção-->
+            <div class="header__list">
+                <ul>
+                    <li><a href="bicicletas.html">Bicicletas</a></li>
+                    <li><a href="seguro.html">Seguros</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="header__menu-mobile">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+            
+        <!-- Reaproveitando o código para o titulo -->
+
+        <section class="our-bikes" id="flex">
+            <div>
+                <h3>cotações no seu email</h3>
+                <h1>solicite um orçamento<span>.</span></h1>
+            </div>
+
+            <!-- detalhe no fundo -->
+
+            <img src="../Images/Components/decoration bike superior.svg" alt="detalhe do fundo">
+        </section>
+
+        <section class="budget">
+
+            <form action="#" class="budget__choice">
+
+                <div>
+
+                    <!-- Escolha entre bikcraft e seguro -->
+
+                    <h2>BIKCRAFT OU SEGURO?</h2>
+
+                    <div class="choice__inputs">
+
+                        <input type="checkbox" name="Checked" id="Bikcraft" onchange="choiceItem()">
+                        <label for="Bikcraft">Bikcraft</label>
+                        <input type="checkbox" name="Checked" id="Seguro" onchange="choiceItem()">
+                        <label for="Seguro">Seguro</label>
+
+                    </div>
+
+                    <div class="budget__bike disableOption">
+
+                        <!-- Escolha sua bicicleta -->
+
+                        <h2>ESCOLHA A SUA :</h2>
+
+                         <div class="choice__items">
+
+                            <!-- Nimbus Stark -->
+
+                            <input type="checkbox" name="Nimbus" id="Nimbus">
+                            <label for="Nimbus">Nimbus Stark 
+                                <p>R$ 4499</p>
+                                <div>
+                                    <ul class="inputs__infos">
+                                        <li>
+                                            <img src="../Images/Components/eletrica.svg" alt=" Motocicleta">
+                                            <h3>Motor Elétrico</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/carbono.svg" alt="Fibra de Carbono">
+                                            <h3>Fibra de Carbono</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/velocidade.svg" alt="Velocímetro">
+                                            <h3>40 km/h</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/rastreador.svg" alt="Rastreador">
+                                            <h3>Rastreador</h3>
+                                        </li>
+                                    </ul>
+                                    <img src="../Images/Images bikes/bicicleta1.png" alt="Bicicleta Nimbus">
+                                </div>
+                            </label>
+
+                            <!-- Nebula Cosmic -->
+
+                            <input type="checkbox" name="Nebula" id="Nebula">
+                            <label for="Nebula">Nebula Cosmic
+                                <p>R$ 3999</p>
+                                <div>
+                                    <ul class="inputs__infos">
+                                        <li>
+                                            <img src="../Images/Components/eletrica.svg" alt=" Motocicleta">
+                                            <h3>Motor Elétrico</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/carbono.svg" alt="Fibra de Carbono">
+                                            <h3>Fibra de Carbono</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/velocidade.svg" alt="Velocímetro">
+                                            <h3>40 km/h</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/rastreador.svg" alt="Rastreador">
+                                            <h3>Rastreador</h3>
+                                        </li>
+                                    </ul>
+                                    <img src="../Images/Images bikes/bicicleta3.png" alt="Nebula Cosmic">
+                                </div>
+                            </label>
+
+                            <!-- Magic Might -->
+
+                            <input type="checkbox" name="Magic" id="Magic">
+                            <label for="Magic">Magic Might
+                                <p>R$ 2499</p>
+                                <div>
+                                    <ul class="inputs__infos">
+                                        <li>
+                                            <img src="../Images/Components/eletrica.svg" alt=" Motocicleta">
+                                            <h3>Motor Elétrico</h3> 
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/carbono.svg" alt="Fibra de Carbono">
+                                            <h3>Fibra de Carbono</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/velocidade.svg" alt="Velocímetro">
+                                            <h3>40 km/h</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/rastreador.svg" alt="Rastreador">
+                                            <h3>Rastreador</h3>
+                                        </li>
+                                    </ul>
+                                    <img src="../Images/Images bikes/bicicleta2.png" alt="Bicicleta Magic Might">
+                                </div>
+                            </label>
+                            
+                         </div>
+                    </div>
+
+                    <div class="budget__insurance disableOption">
+
+                        <!-- Escolha o seguro -->
+
+                        <h2>ESCOLHA O SEU :</h2>
+                        
+                        <div class="choice__items">
+
+                            <!-- Plano gold -->
+
+                            <input type="checkbox" name="planGold" id="planGold" onchange="changeCheckBox()">
+                            <label for="planGold">
+                                Ouro
+                                <p>R$ 299 Mensal</p>
+                                <div>
+                                    <ul class="inputs__infos">
+                                        <li>
+                                            <img src="../Images/Components/confere.svg" alt="Confere">
+                                            <h3>Cinco trocas por ano</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/confere.svg" alt="Confere">
+                                            <h3>Assistência especial</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/confere.svg" alt="Confere">
+                                            <h3>Suporte 24h</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/confere.svg" alt="Confere">
+                                            <h3>Cobertura nacional</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/confere.svg" alt="Confere">
+                                            <h3>Desconto em parceiros</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/confere.svg" alt="Confere">
+                                            <h3>Acesso ao Clube Bikecraft</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </label>
+
+                            <!-- Plano silver -->
+    
+                            <input type="checkbox" name="planSilver" id="planSilver" onchange="changeCheckBox()">
+                            <label for="planSilver">
+                                Prata
+                                <p>R$ 199 Mensal</p>
+                                <div>
+                                    <ul class="inputs__infos">
+                                        <li>
+                                            <img src="../Images/Components/confere.svg" alt="Confere">
+                                            <h3>Duas trocas por ano</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/confere.svg" alt="Confere">
+                                            <h3>Assistencia técnica</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/confere.svg" alt="Confere">
+                                            <h3>Suporte 08h às 18h</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/confere.svg" alt="Confere">
+                                            <h3>Cobertura estadual</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </label>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- decoration bottom orçamento -->
+                <figure>
+                    <img src="../Images/Components/decoration budget inferior.svg" alt="detalhe em pontos">
+                </figure>
+            </form>
+
+            <form action="#" class="budget__form">
+                
+                <div>
+
+                    <!-- Dados pessoais -->
+
+                    <h2>DADOS PESSOAIS</h2>
+
+                    <div>
+
+                        <!-- Nome e sobrenome -->
+
+                        <div class="budget__form-container">
+                            <div class="budget__form-items">
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome">
+                            </div>
+                            <div class="budget__form-items">
+                                <label for="sobrenome">Sobrenome</label>
+                                <input type="text" name="sobrenome">
+                            </div>
+                        </div>
+
+                        <!-- CPF -->
+
+                        <div class="budget__form-items">
+                            <label for="cpf">CPF</label>
+                            <input type="text" \ pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \ name="cpf" placeholder="000.000.000-00">
+                        </div>
+
+                        <!-- Email -->
+
+                        <div class="budget__form-items">
+                            <label for="email">Email</label>
+                            <input type="email" name="email">
+                        </div>
+                    </div>
+
+                    <!-- Localização da entrega -->
+
+                    <h2>ENTREGA</h2>
+
+                    <div>
+
+                        <!-- CEP e Número da casa -->
+
+                        <div class="budget__form-container">
+                            <div class="budget__form-items">
+                                <label for="cep">CEP</label>
+                                <input type="text" \ pattern="\d{5}\-\d{3}" \ name="cep">
+                            </div>
+                            <div class="budget__form-items">
+                                <label for="numero">Número</label>
+                                <input type="text" name="numero">
+                            </div>
+                        </div>
+
+                        <!-- Logradouro e Bairro -->
+
+                        <div class="budget__form-container">
+                            <div class="budget__form-items">
+                                <label for="logradouro">Logradouro</label>
+                                <input type="text" name="logradouro" placeholder="Rua, avenida  etc">
+                            </div>
+                            <div class="budget__form-items">
+                                <label for="bairro">Bairro</label>
+                                <input type="text" name="bairro">
+                            </div>
+                        </div>
+
+                        <!-- Cidade e Estado -->
+
+                        <div class="budget__form-container">
+                            <div class="budget__form-items">
+                                <label for="cidade">Cidade</label>
+                                <input type="text" name="cidade">
+                            </div>
+                            <div class="budget__form-items">
+                                <label for="estado">Estado</label>
+                                <select name="estado" id="estado" onclick="rotateImage()"> 
+                                    <option value="estado">Selecione</option> 
+                                    <option value="ac">Acre</option> 
+                                    <option value="al">Alagoas</option> 
+                                    <option value="am">Amazonas</option> 
+                                    <option value="ap">Amapá</option> 
+                                    <option value="ba">Bahia</option> 
+                                    <option value="ce">Ceará</option> 
+                                    <option value="df">Distrito Federal</option> 
+                                    <option value="es">Espírito Santo</option> 
+                                    <option value="go">Goiás</option> 
+                                    <option value="ma">Maranhão</option> 
+                                    <option value="mt">Mato Grosso</option> 
+                                    <option value="ms">Mato Grosso do Sul</option> 
+                                    <option value="mg">Minas Gerais</option> 
+                                    <option value="pa">Pará</option> 
+                                    <option value="pb">Paraíba</option> 
+                                    <option value="pr">Paraná</option> 
+                                    <option value="pe">Pernambuco</option> 
+                                    <option value="pi">Piauí</option> 
+                                    <option value="rj">Rio de Janeiro</option> 
+                                    <option value="rn">Rio Grande do Norte</option> 
+                                    <option value="ro">Rondônia</option> 
+                                    <option value="rs">Rio Grande do Sul</option> 
+                                    <option value="rr">Roraima</option> 
+                                    <option value="sc">Santa Catarina</option> 
+                                    <option value="se">Sergipe</option> 
+                                    <option value="sp">São Paulo</option> 
+                                    <option value="to">Tocantins</option>
+                                </select>
+                                <img src="../Images/Components/seta de abrir menu.svg" alt="Seta">
+                            </div>
+                        </div>
+
+                        <!-- Termos e condições -->
+
+                        <div class="budget__form-termos">
+                            <input type="checkbox" name="termos">
+                            <label for="termos">Li e aceito os <a href="termosCondição.html">termos e condições</a>.</label>
+                        </div>
+
+                        
+                        <!-- botao solicitar orçamento com div reaproveitada da sessão bikes -->
+
+                        <div class="bike__about-container" id="solicitar-orcamento">
+                            <input type="submit" value="SOLICITAR ORÇAMENTO">
+                        </div>
+                    
+                    </div>
+
+                </div>
+
+                <!-- Detalhe no fundo -->
+
+                <figure>
+                    <img src="../Images/Components/detalhe contato inferior.svg" alt="detalhe do background" class="budget__form-detail">
+                </figure>                
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer__itens">
+                <figure>
+                    <img src="../Images/Components/decoration footer.svg">
+                </figure>
+                <div class="footer__container">
+                    <div class="footer__container-itens">
+                        <div class="footer__logo">
+                            <img src="../Images/Components/bikcraft.svg" alt="Logo da Bikcraft">
+                        </div>
+                        <div class="footer__contact">
+                            <h2>CONTATO</h2>
+                            <nav class="footer__contact-nav">
+                                <a href="tel:553399999999">+55 33 9999-9999</a>
+                                <a href="malito:contato@bikcraft.com">contato@bikcraft.com</a>
+                            </nav>
+                            <hr>
+                            <div class="footer__contact-text">
+                                <p>Rua Ali Perto, 55 - Ibituruna</p>
+                                <p>Governador Valadares - MG</p>
+                            </div>
+                            <hr>
+                            <nav class="footer__contact-socialmedia">
+                                <a href="#"><img src="../Images/Components/instagram.svg" alt="Logo do Instagram"></a>
+                                <a href="#"><img src="../Images/Components/youtube.svg" alt="Logo do Youtube"></a>
+                                <a href="#"><img src="../Images/Components/facebook.svg" alt="Logo do Facebook"></a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="footer__informations">
+                        <h2>INFORMAÇÕES</h2>
+                        <nav class="footer__informations-nav">
+                            <a href="bicicletas.html">Bicicletas</a>
+                            <a href="seguro.html">Seguros</a>
+                            <a href="contato.html">Contato</a>
+                            <a href="termosCondição.html">Termos e condições</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer__direitos">Bikcraft © Alguns Direitos Reservados.</p>
+    </footer>
+    
+    <script src="../Javascript/menu.js"></script>
+    <script src="../Javascript/formOrcamento.js"></script>
+</body>

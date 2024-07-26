@@ -1,0 +1,188 @@
+.products {
+    padding: var(--space) 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--space);
+}
+
+.products__itens {
+    display: flex;
+    justify-content: center;
+    gap: var(--space);
+
+    padding: var(--space) 0;
+}
+
+.products__itens-container {
+    display: flex;
+    gap: var(--space);
+    width: 80%;
+}
+
+.products__images {
+    position: relative;
+}
+
+.products__prices {
+    position: absolute;
+    top: 5%;
+    right: 0%;
+
+    background-color: var(--black);
+    color: var(--white);
+
+    font-weight: 500;
+    font-size: 1.125rem;
+
+    padding: 8px 12px;
+    border-radius: 5px 0 0 5px;
+}
+
+.products__informations {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--space) - 25px);
+}
+
+.traco {
+    display: flex;
+
+    width: 12px;
+    height: 8px;
+
+    background-color: var(--yellow-light);
+}
+
+.products__informations h2 {
+    font-size: 2.25rem;
+    font-family: var(--secundary-font);
+    font-weight: 600;
+
+    color: var(--grey11);
+}
+
+.products__informations-text {
+    font-size: 1.125rem;
+    font-weight: 400;
+
+    color: var(--grey8);
+}
+
+.products__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.products__details-container {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--space) - 25px);
+}
+
+.products__details-itens {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.products__details-itens p {
+    font-family: var(--secundary-font);
+    font-weight: 500;
+    font-size: 1.125rem;
+
+    color: var(--grey8);
+}
+
+.products__details a {
+    background-image: linear-gradient(180deg, var(--yellow-light), var(--yellow-dark));;
+    color: var(--brown);
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 8px;
+
+    max-width: 195px;
+    padding: 16px 32px;
+    border-radius: 5px;
+
+    font-family: var(--secundary-font);
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 24px;
+}
+
+/* Inserindo a cor de fundo preta no segundo produto e dando um espaço de fundo branco */
+
+#products__black-background {
+    background-color: var(--grey11);
+    box-shadow: inset 220px 0 var(--white);
+}
+
+#products__black-background-subtitle {
+    color: var(--white);
+}
+
+#products__black-background-text {
+    color: var(--grey4);
+}
+
+.fundo__detalhe {
+    width: 52px;
+    height: 52px;
+}
+
+@media (max-width: 1200px) {
+    .products {
+        align-items: center;
+    }
+    
+    .products__itens-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .products__images img {
+        width: 100%;
+    }
+
+    /* Colocando o detalhe do fundo no topo com order */
+
+    .products__images {
+        order: 2;
+        width: 80%;
+    }
+
+    .products__informations {
+        order: 3;
+        width: 80%;
+    }
+
+    .fundo__detalhe {
+        order: 1;
+        width: 90%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .products__itens {
+        flex-direction: column;
+    }
+
+    /* Removendo o espaço branco no fundo preto */
+
+    #products__black-background {
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .products__details {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}

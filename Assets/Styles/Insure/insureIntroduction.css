@@ -1,0 +1,41 @@
+.main__safe{
+    padding: 60px;
+}
+
+.main__safe div:first-child{
+    grid-area: title;
+    width: fit-content;
+    justify-self: center;
+}
+
+.main__safe div:first-child h1{
+    grid-area: none;
+    margin: 10px 0 0 80px;
+}
+
+.main__safe > div:first-child p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    margin: 0 0 0 80px;
+    color: var(--grey5);
+}
+
+@media(max-width: 820px){
+
+    .main__safe div:first-child h1{
+        margin: 20px 0 0;
+    }
+
+    .main__safe > div:first-child p{
+        margin: 0;
+    }
+}
+
+@media(max-width: 480px){
+
+    .main__safe div:first-child h1{
+        margin: 0;
+    }
+}

@@ -1,0 +1,96 @@
+.choose-one {
+    background-color: var(--white);
+    padding: calc(var(--space) + 40px) 0;
+}
+
+/* centralizando com margin auto nos lados */
+
+.choose-one__container {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.choose-one__container h1{
+    font-family: var(--secundary-font);
+    font-weight: 600;
+    font-size: 4rem;
+
+    color: var(--grey11);
+}
+
+.choose-one__itens {
+    display: flex;
+    gap: var(--space);
+}
+
+.choose-one__itens-container {
+    width: 50%;
+}
+
+.choose-one__itens-container img{
+    width: 100%;
+}
+
+.choose-one__itens-text {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--space) - 35px);
+
+    font-family: var(--secundary-font);
+    font-weight: 600;
+    font-size: 2rem;
+
+    color: var(--grey11);
+}
+
+.choose-one__itens-container p {
+    padding-left: 17px;
+
+    color: var(--grey8);
+
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+/* Diminuindo o max-width do choose-one__container para manter os itens centralizados em cada tamanho de tela */
+
+@media (max-width: 950px) {
+    .choose-one__container {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 750px) {
+    .choose-one__container {
+        max-width: 500px;
+    }    
+    
+    .choose-one__container h1 {
+        font-size: 2rem;
+    }
+
+    .choose-one__itens-text h3 {
+        font-size: 1.125rem;
+    }
+
+    .choose-one__itens-container p {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .choose-one__container {
+        max-width: 300px;
+    }   
+
+    .choose-one__itens {
+        flex-direction: column;
+    }
+
+    .choose-one__itens-container {
+        width: 100%;
+    }
+}

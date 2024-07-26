@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Styles/style.css">
+    <title>Bicicletas || Nebula Cosmic</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+
+            <!--Logo da BikCraft-->
+            <div class="header__image">
+                <a href="../../../index.html"><img src="../../Images/Components/bikcraft.svg" alt="Logo do Bikcraft"></a>
+            </div>
+
+            <!--Menu de seleção-->
+            <div class="header__list">
+                <ul>
+                    <li><a href="../bicicletas.html" id="underLine">Bicicletas</a></li>
+                    <li><a href="../seguro.html">Seguros</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="header__menu-mobile">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="our-bikes">
+            <h3>R$ 3999</h3>
+            <h1>Nebula Cosmic<span>.</span></h1>
+        </section>
+
+        <section class="bike">
+            <div class="bike__container">
+
+                <!-- Fotos das bicicletas -->
+
+                <picture class="bike__images">
+                    <figure class="bike__images-principal">
+                        <img src="../../Images/Images bikes/bicicleta3.png" alt="Nimbus Stark">
+                    </figure>
+                    <figure class="bike__images-secundary">
+                        <a href="nimbusstark.html"><img src="../../Images/Images bikes/bicicleta1.png" alt="Nimbus Stark"></a>
+                        <a href="magicmight.html"><img src="../../Images/Images bikes/bicicleta2.png" alt="Magic Might"></a>
+                    </figure>
+                </picture>
+
+                <!-- Detalhes da bicicleta -->
+
+                <div class="bike__details">
+                    <div class="bike__about">
+
+                        <!-- Sobre a bicicleta -->
+
+                        <p class="bike__about-text">A Nebula Cosmic é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
+                        <div class="bike__about-container">
+
+                            <!-- Botão comprar agora -->
+
+                            <a href="../orcamento.html" onclick = "setPageNebula()">COMPRAR AGORA</a>
+
+                            <!-- Detalhes da entrega -->
+
+                            <div class="bike__about-itens">
+                                <div class="bike__about-container-texts">
+                                    <img src="../../Images/Components/entrega.svg">
+                                    <p>Entrega em 5 dias</p>
+                                </div>
+                                <div class="bike__about-container-texts">
+                                    <img src="../../Images/Components/estoque.svg">
+                                    <p>15 em estoque</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Informações da bicicleta -->
+                   
+                    <div>
+                        <p class="bike-description">INFORMAÇÕES</p>
+
+                        <div class="bike__informations">
+                            <div class="bike__informations-container">
+                                <img src="../../Images/Components/eletrica.svg">
+                                <h2>Motor Elétrico</h2>
+                                <p>Permite você viajar distâncias inimaginaveis com a sua bike.</p>
+                            </div>
+                            <div class="bike__informations-container">
+                                <img src="../../Images/Components/velocidade.svg">
+                                <h2>40 km/h</h2>
+                                <p>A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
+                            </div>
+                            <div class="bike__informations-container">
+                                <img src="../../Images/Components/rastreador.svg">
+                                <h2>Rastreador</h2>
+                                <p>Rastreador e sistema anti-furto para garantir o seu sossego.</p>
+                            </div>
+                            <div class="bike__informations-container">
+                                <img src="../../Images/Components/carbono.svg">
+                                <h2>Fibra de Carbono</h2>
+                                <p>Maior proteção possível para a sua Bikcraft com fibra de carbono.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ficha técnica da bicicleta -->
+                    
+                   <div>
+                        <p class="bike-description">FICHA TÉCNICA</p>
+
+                        <div class="bike__datasheet">
+                            <div class="bike__datasheet-text">
+                                <p>Peso</p>
+                                <p>9 kg</p>
+                            </div>
+                            <hr class="bike__datasheet-hr">
+                            <div class="bike__datasheet-text">
+                                <p>Altura</p>
+                                <p>60cm</p>
+                            </div>
+                            <hr class="bike__datasheet-hr">
+                            <div class="bike__datasheet-text">
+                                <p>Largura</p>
+                                <p>120 cm</p>
+                            </div>
+                            <hr class="bike__datasheet-hr">
+                            <div class="bike__datasheet-text">
+                                <p>Profundidade</p>
+                                <p>10 cm</p>
+                            </div>
+                            <hr class="bike__datasheet-hr">
+                            <div class="bike__datasheet-text">
+                                <p>Marchas</p>
+                                <p>16</p>
+                            </div>
+                            <hr class="bike__datasheet-hr">
+                            <div class="bike__datasheet-text">
+                                <p>Roda</p>
+                                <p>29</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detalhe no fundo da página -->
+
+                <figure class="bike__background-detail">
+                    <img src="../../Images/Components/decoration home inferior.svg">
+                </figure>
+            </div>
+        </section>
+
+        <section class="choose-one">
+            <div class="choose-one__container">
+                <h1>escolha a sua <span>.</span></h1>
+                <div class="choose-one__itens">
+                    
+                    <a href="nimbusstark.html" class="choose-one__itens-container">
+
+                        <!-- imgagem de outra bicicleta -->
+
+                        <img src="../../Images/Images bikes/bicicleta1.png" alt="Nimbus Stark">
+
+                        <!-- nome e preço da bicicleta -->
+
+                        <div class="choose-one__itens-text">
+                            <span class="traco"></span>
+                            <h3>Nimbus Stark</h3>
+                        </div>
+                        <p>R$ 4499</p>
+                    </a>   
+
+                    
+                    <a href="magicmight.html" class="choose-one__itens-container">
+
+                        <!-- imgagem de outra bicicleta -->
+
+                        <img src="../../Images/Images bikes/bicicleta2.png" alt="Magic Might">
+
+                        <!-- nome e preço da bicicleta -->
+
+                        <div class="choose-one__itens-text">
+                            <span class="traco"></span>
+                            <h3>Magic Might</h3>
+                        </div>
+                        <p>R$ 2499</p>
+                    </a>   
+                </div>                    
+            </div>
+        </section>
+
+        <section class="insurance">
+
+            <!-- imagem de uma bicicleta -->
+
+            <figure class="insurance__image"><img src="../../Images/Images bikes/seguros.png" alt="Foto de uma Bicicleta"></figure>
+
+            <!-- textos sobre o seguro -->
+
+            <div class="insurance__texts">
+                <h1>Pedale mais tranquilo com o nosso <span>seguro.</span></h1>
+                <p>Inscreva-se em um dos planos do nosso seguro Bikcraft e aproveite diversos benefícios.</p>
+                <div class="bike__about-container">
+                    <a href="../seguro.html">CONHEÇA MAIS</a>
+                </div>
+            </div>
+
+            <!-- detalhe do fundo -->
+
+            <figure class="insurance__detail-background">
+                <img src="../../Images/Components/decoration bike-interna superior.svg" alt="Detalhe do background">
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer__itens">
+                <figure>
+                    <img src="../../Images/Components/decoration footer.svg">
+                </figure>
+                <div class="footer__container">
+                    <div class="footer__container-itens">
+                        <div class="footer__logo">
+                            <img src="../../Images/Components/bikcraft.svg" alt="Logo da Bikcraft">
+                        </div>
+                        <div class="footer__contact">
+                            <h2>CONTATO</h2>
+                            <nav class="footer__contact-nav">
+                                <a href="tel:553399999999">+55 33 9999-9999</a>
+                                <a href="malito:contato@bikcraft.com">contato@bikcraft.com</a>
+                            </nav>
+                            <hr>
+                            <div class="footer__contact-text">
+                                <p>Rua Ali Perto, 55 - Ibituruna</p>
+                                <p>Governador Valadares - MG</p>
+                            </div>
+                            <hr>
+                            <nav class="footer__contact-socialmedia">
+                                <a href="#"><img src="../../Images/Components/instagram.svg" alt="Logo do Instagram"></a>
+                                <a href="#"><img src="../../Images/Components/youtube.svg" alt="Logo do Youtube"></a>
+                                <a href="#"><img src="../../Images/Components/facebook.svg" alt="Logo do Facebook"></a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="footer__informations">
+                        <h2>INFORMAÇÕES</h2>
+                        <nav class="footer__informations-nav">
+                            <a href="../bicicletas.html">Bicicletas</a>
+                            <a href="../seguro.html">Seguros</a>
+                            <a href="../contato.html">Contato</a>
+                            <a href="../termosCondição.html">Termos e condições</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer__direitos">Bikcraft © Alguns Direitos Reservados.</p>
+    </footer>
+    
+    <script src="../../Javascript/menu.js"></script>
+    <script>
+        function setPageNebula(){
+            sessionStorage.setItem('pageNebula', 'buttonNebula')
+        };
+    </script>
+</body>
+</html>

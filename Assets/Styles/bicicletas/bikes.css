@@ -1,0 +1,233 @@
+.bike {
+    background-color: var(--grey11);
+    padding: var(--space) 0;
+}
+
+.bike__container {
+    display: flex;
+    justify-content: center;
+    gap: var(--space);
+
+    position: relative;
+}
+
+.bike__images {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--space) - 20px);
+}
+
+.bike__images-principal img{
+    width: 560px;
+    border-radius: 5px;
+}
+
+.bike__images-secundary {
+    display: flex;
+    gap: calc(var(--space) - 20px);
+}
+
+.bike__images-secundary img{
+    width: 270px;
+    border-radius: 5px;
+}
+
+.bike__details {
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--space);
+}
+
+.bike__about {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space);
+}
+
+.bike__about-text {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--grey4);
+}
+
+.bike__about-container {
+    display: flex;
+    align-items: center;
+    gap: var(--space);
+}
+
+.bike__about-container a {
+    background-image: linear-gradient(180deg, var(--yellow-light), var(--yellow-dark));
+    color: var(--brown);
+
+    padding: 16px 40px;
+    border-radius: 5px;
+
+    font-family: var(--secundary-font);
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+.bike__about-itens {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--space) - 30px);
+}
+
+.bike__about-container-texts {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--space) - 30px);
+
+    background-color: var(--black);
+
+    width: 100%;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.bike__about-container-texts p {
+    color: var(--grey4);
+
+    font-family: var(--secundary-font);
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+.bike-description {
+    color: var(--grey4);
+
+    font-family: var(--secundary-font);
+    font-weight: 500;
+    font-size: 0.75rem;
+
+    padding-bottom: 12px;
+}
+
+.bike__informations {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    padding: 32px;
+    border-radius: 5px;
+    gap: calc(var(--space) - 20px);
+
+    background-color: var(--black);
+}
+
+.bike__informations-container h2 {
+    padding: 4px 0 8px;
+
+    color: var(--white);
+
+    font-family: var(--secundary-font);
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.bike__informations-container p {
+    color: var(--grey4);
+
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.bike__datasheet {
+    background-color: var(--black);
+
+    border-radius: 5px;
+    padding: var(--space);
+}
+
+.bike__datasheet-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bike__datasheet-text :nth-child(1){
+    color: var(--grey2);
+
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.bike__datasheet-text :nth-child(2){
+    color: var(--grey4);
+
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.bike__datasheet-hr {
+    width: 100%;
+
+    border: 1px solid var(--grey11);
+}
+
+/* posicionando o detalhe do fundo com position absolute */
+
+.bike__background-detail {
+    position: absolute;
+    bottom: 0%;
+    left: 8%;
+}
+
+@media (max-width: 1400px) {
+
+    .bike__container {
+        flex-direction: column;
+        align-items: center;
+
+        padding-bottom: 100px
+    }
+
+    .bike__images {
+        width: 80%;
+        align-items: center;
+    }
+
+    .bike__details {
+        width: 80%;
+    }
+
+    .products__details{
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 700px) {
+    .bike__images {
+        width: 95%;
+    }
+    
+    .bike__images-principal img{
+        width: 100%;
+    }
+
+    .bike__images-secundary {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .bike__images-secundary img {
+        width: 100%;
+    }
+
+    .bike__details {
+        width: 95%;
+    }
+
+    .bike__about-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bike__about-container-texts {
+        gap: calc(var(--space) - 30px);
+    }
+}

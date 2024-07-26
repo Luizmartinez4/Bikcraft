@@ -1,0 +1,105 @@
+.main__associate{
+    padding: var(--space);
+}
+
+.main__associate h1{
+    font-family: var(--secundary-font);
+    font-size: 4rem;
+    margin: 30px 0;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.associate__logos{
+    display: block;
+    max-width: 1700px;
+    margin: 0 auto;
+
+    padding: var(--space) 60px;
+}
+
+.associate__logos figure{
+    display: flex;
+    justify-content: center;
+}
+
+.associate__logos figure img{
+    display: block;
+
+    width: 100%;
+    max-width: 300px;
+    min-width: 250px;
+    padding: 50px;
+}
+
+.associate__logos figure:first-of-type img:first-of-type,
+.associate__logos figure:first-of-type img:nth-of-type(2),
+.associate__logos figure:first-of-type img:nth-of-type(3){
+    border-right: 2px solid var(--border);
+    border-bottom: 2px solid var(--border);
+}
+
+.associate__logos figure:first-of-type img:last-of-type{
+    border-bottom: 2px solid var(--border);
+}
+
+.associate__logos figure:last-of-type img:not(:last-of-type){
+    border-right: 2px solid var(--border);
+}
+
+@media(max-width: 1200px){
+
+    .main__associate h1{
+        text-align: center;
+    }
+
+    .associate__logos{
+        display: flex;
+        justify-content: center;
+    }
+
+    .associate__logos figure{
+        flex-direction: column;
+    }
+
+    .associate__logos figure img{
+        padding: 30px;
+        max-width: 300px;
+        height: 140px;
+    }
+
+    .associate__logos figure:first-of-type img:first-of-type{
+        border-right: 2px solid var(--border);
+    }
+
+    .associate__logos figure:first-of-type img:last-of-type{
+        border-bottom: none;
+        border-right: 2px solid var(--border);
+    }
+
+    .associate__logos figure:last-of-type img:not(:last-of-type){
+        border-right: none;
+        border-bottom: 2px solid var(--border);
+    }
+}
+
+@media(max-width: 580px){
+
+    .main__associate h1{
+        font-size: 3.4rem;
+    }
+
+    .main__associate{
+        padding: 30px;
+    }    
+
+    .associate__logos{
+        padding: var(--space);
+    }
+
+    .associate__logos figure img{
+        padding: 20px;
+        min-width: 150px;
+        height: 100px;
+    }
+}

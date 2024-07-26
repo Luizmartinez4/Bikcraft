@@ -1,0 +1,249 @@
+/* começa a partir do primeiro form */
+
+.budget__choice{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: var(--space);
+
+    width: 100%;
+    max-width: 460px;
+    min-height: 950px;
+    padding: 60px 48px;
+
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 5px 0 0 5px;
+}
+
+.budget__choice > div{
+    display: grid;
+    gap: 20px;
+
+    width: 100%;
+}
+
+.budget__bike > h2,
+.budget__choice div > h2,
+.budget__insurance > h2{
+    font-family: var(--secundary-font);
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 24px;
+
+    color: var(--grey4);
+    margin: 0 0 20px 0;
+}
+
+.budget__choice > div > h2:first-of-type{
+    margin: 0;
+}
+
+.budget__bike > h2::before,
+.budget__choice div > h2::before,
+.budget__insurance > h2::before,
+.budget__form > div > h2::before{
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 8px;
+    margin: 0 8px 1px 0;
+
+    background-image: linear-gradient(180deg, var(--yellow-light), var(--yellow-dark));
+}
+
+/* estilizando todos os labels dentro do form */
+.budget__choice label,
+.budget__insurance label{
+    font-family: var(--secundary-font);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 16px;
+
+    color: var(--grey2);
+    background-color: var(--grey8);
+    border-radius: 5px;
+
+    width: 100%;
+    padding: 16px;
+
+    cursor: pointer;
+}
+
+.choice__inputs,
+.choice__items{
+    display: flex;
+    gap: 20px;
+    margin: 0 0 0 12px;
+}
+
+.choice__items:has(label > p){
+    flex-direction: column;
+}
+
+.choice__inputs input,
+.choice__items input{
+    display: none;
+}
+
+/* selecionando label irmão quando input estiver ativo */
+#Bikcraft:checked ~ label[for='Bikcraft'],
+#Seguro:checked ~ label[for='Seguro'],
+#Nimbus:checked ~ label[for ='Nimbus'],
+#Nebula:checked ~ label[for ='Nebula'],
+#Magic:checked ~ label[for ='Magic'],
+#planGold:checked ~ label[for = 'planGold'],
+#planSilver:checked ~ label[for = 'planSilver']{
+    color: var(--grey11);
+    background-color: var(--white);
+}
+
+.choice__inputs > label::before,
+.choice__items > label::before,
+.budget__insurance > label::before{
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 8px 0 0;
+
+    border: 1px solid var(--grey6);
+    border-radius: 100%;
+}
+
+/* criando before quando input estiver ativo */
+#Bikcraft:checked ~ label[for = 'Bikcraft']::before,
+#Seguro:checked ~ label[for = 'Seguro']::before,
+#Nimbus:checked ~ label[for = 'Nimbus']::before,
+#Nebula:checked ~ label[for = 'Nebula']::before,
+#Magic:checked ~ label[for = 'Magic']::before,
+#planGold:checked ~ label[for = 'planGold']::before,
+#planSilver:checked ~ label[for = 'planSilver']::before{
+    border: 1px solid var(--grey8);
+    box-shadow: inset 0 0 0 3px var(--white),
+                inset 0 0 0 6px var(--grey8);
+}
+
+/* todo label que tem um p dentro fara isso */
+.choice__items > label:has(p){
+    width: 100%;
+    max-width: 340px;
+    position: relative;
+}
+
+/* position absolute para posicionar o p no canto direito */
+.choice__items > label > p{
+    display: none;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    
+    font-family: var(--secundary-font);
+    font-size: 0.9rem;
+    line-height: 16px;
+}
+
+.choice__items > label > div{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 16px;
+    margin: 20px 0 0 0;
+}
+
+#Nimbus:checked ~ label[for = 'Nimbus'] > p,
+#Nebula:checked ~ label[for = 'Nebula'] > p,
+#Magic:checked ~ label[for = 'Magic'] > p,
+#planGold:checked ~ label[for = 'planGold'] > p,
+#planSilver:checked ~ label[for = 'planSilver'] > p{
+    display: inline-block;
+}
+
+#Nimbus:checked ~ label[for = 'Nimbus'] > div,
+#Nebula:checked ~ label[for = 'Nebula'] > div,
+#Magic:checked ~ label[for = 'Magic'] > div,
+#planGold:checked ~ label[for = 'planGold'] > div,
+#planSilver:checked ~ label[for = 'planSilver'] > div{
+    display: flex;
+}
+
+.inputs__infos li{
+    display: flex;
+    gap: 8px;
+}
+
+.inputs__infos li h3{
+    font-family: var(--secundary-font);
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 16px;
+
+    color: var(--grey8);
+}
+
+.inputs__infos li img{
+    width: 16px;
+    height: 16px;
+}
+
+.choice__items img {
+    max-width: 140px;
+}
+
+/* selecionando todas as div dentor de inputs__infos menos a primeira */
+.inputs__infos li:not(:first-of-type){
+    margin: 8px 0 0 0;
+}
+
+.choice__inputs > label > div > img{
+    width: 100%;
+    max-width: 140px;
+}
+
+.disableOption{
+    display: none;
+}
+
+@media (max-width: 1000px){
+
+    .choice__items img {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 740px){
+
+
+
+    #Nimbus:checked ~ label[for = 'Nimbus'] > div,
+    #Nebula:checked ~ label[for = 'Nebula'] > div,
+    #Magic:checked ~ label[for = 'Magic'] > div,
+    #planGold:checked ~ label[for = 'planGold'] > div,
+    #planSilver:checked ~ label[for = 'planSilver'] > div{
+        flex-direction: column;
+    }
+
+    .choice__items > label > div{
+        align-items: flex-start;
+    }
+
+}
+
+@media(max-width: 600px){
+
+    .our__bikes h1{
+        font-size: 3rem;
+    }
+
+    .budget__choice{
+        padding: 20px;
+    }
+
+    .choice__inputs,
+    .choice__items{
+        flex-wrap: wrap;
+        margin: 0;
+    }
+}

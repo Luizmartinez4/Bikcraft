@@ -1,0 +1,230 @@
+/* usando box shadow para aparentar estar entre sessões */
+
+.contact {
+    display: flex;
+    justify-content: center;
+
+    padding: var(--space) 0;
+
+    height: 685px;
+
+    box-shadow: inset 0 345px var(--grey11),
+                inset 0 -340px var(--grey2);
+                
+}
+
+.contact__data {
+    background-color: var(--black);
+
+    width: 30%;
+    padding: 60px 0 60px 60px;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--space);
+
+    position: relative;
+}
+
+.contact__data h3 {
+    font-family: var(--secundary-font);
+    font-weight: 600;
+    font-size: 1rem;
+
+    color: var(--white);
+}
+
+.contact__data p {
+    color: var(--grey4);
+
+    font-weight: 500;
+    font-size: 1rem;
+
+    line-height: 24px;
+}
+
+.contact__data-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact__data-itens {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.contact__media {
+    display: flex;
+    gap: 20px;
+}
+
+.contact__decoration {
+    width: 52px;
+
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+.form {
+    background-color: var(--white);
+
+    padding: 60px;
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    position: relative;
+}
+
+.form label {
+    color: var(--grey11);
+
+    font-family: var(--secundary-font);
+    font-weight: 500;
+    font-size: 1rem;
+
+    line-height: 24px;
+}
+
+.form input {
+    width: 100%;
+    height: 48px;
+
+    background-color: var(--grey1);
+
+    border-radius: 5px;
+    border: solid 1px var(--grey2);
+
+    font-weight: 400;
+    font-size: 1rem;
+
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+.form input:active {
+    border: 1px solid var(--grey4);
+}
+
+.form input::placeholder {
+    color: var(--grey4);
+
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.form__personal-data {
+    display: flex;
+    gap: 20px;
+}
+
+.form__textarea {
+    display: flex;
+    flex-direction: column;
+}
+
+.form textarea {
+    width: 100%;
+    height: 230px;
+
+    background-color: var(--grey1);
+    border: 1px solid var(--grey2);
+
+    font-weight: 400;
+    font-size: 1rem;
+
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-top: 5px;
+
+    resize: none;
+}
+
+.form textarea::placeholder {
+    color: var(--grey4);
+
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.form__decoration {
+    width: 52px;
+
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+#decoration__mobile {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .contact__data {
+        width: 40%;
+    }
+
+    .form {
+        width: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+
+        height: 1200px;
+
+        box-shadow: inset 0 600px var(--grey11),
+                    inset 0 -600px var(--grey2);
+    }
+
+    .contact__data {
+        padding: 60px;
+        width: 80%;
+    }
+    
+    .contact__decoration {
+        display: none;
+    }
+
+    #decoration__mobile {
+        display: block;
+
+        filter: opacity(0.1);
+    }
+
+    .form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact {
+        padding: 0;
+    }
+
+    .contact__data {
+        width: 100%;
+        padding: 20px auto;
+    }
+
+    .form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form__decoration {
+        display: none;
+    }
+
+    #decoration__mobile {
+        display: none;
+    }
+}
